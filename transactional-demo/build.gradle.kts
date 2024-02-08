@@ -18,6 +18,8 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui")
+
     implementation("org.flywaydb:flyway-core")
     implementation("com.h2database:h2")
 

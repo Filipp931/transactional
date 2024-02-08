@@ -14,12 +14,13 @@ class PersonService(
 ) {
     private val log = LoggerFactory.getLogger(PersonService::class.java)
 
-//    @Transactional
+    @Transactional
     fun getPersonsFromRemote() {
         log.info("Getting persons from remote")
         val persons = personRepository.saveAll(
             remotePersonService.getPersons()
         )
+        //todo do something
         persons.forEach { person ->
             person.qualification = remoteQualificationService.getPersonQualificationByIdAndPassport(
                 personId = requireNotNull(person.id),

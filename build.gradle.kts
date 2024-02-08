@@ -11,6 +11,8 @@ val detektVersion: String by project
 val h2Version: String by project
 val flywayVersion: String by project
 
+val openApiVersion: String by project
+
 val logstashLogbackEncoderVersion: String by project
 val slf4jKotlinExtensionVersion: String by project
 
@@ -77,6 +79,8 @@ subprojects {
 
 			dependency("com.h2database:h2:$h2Version")
 			dependency("org.flywaydb:flyway-core:$flywayVersion")
+
+			dependency("org.springdoc:springdoc-openapi-starter-webmvc-ui:$openApiVersion")
 
 			dependency("net.logstash.logback:logstash-logback-encoder:$logstashLogbackEncoderVersion")
 			dependency("com.frimastudio:slf4j-kotlin-extensions:$slf4jKotlinExtensionVersion")
