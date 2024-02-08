@@ -20,5 +20,4 @@ class RemotePersonService {
             passport = "passport2",
         ),
     )
-
 }
